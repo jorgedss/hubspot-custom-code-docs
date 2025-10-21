@@ -5,6 +5,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+"""
+    Obtém os IDs do objeto associado.
+    Parâmetros:
+        from_object (str): O tipo do objeto de origem (ex: "deals").
+        object_id (str): O ID do objeto de origem.
+        to_object (str): O tipo do objeto associado (ex: "quotes").
+        access_token (str): Token de acesso para autenticação na API HubSpot.
+    Retorna:
+        list: Lista de IDs dos objetos associados encontrados.
+"""
+
 
 def get_associated_object_ids(from_object, object_id, to_object, access_token):
     try:
